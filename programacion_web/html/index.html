@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Eventos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div id="calendarControls">
+        <button id="annualViewBtn" style="background-color: rgb(163, 117, 206);">Anual</button>
+        <button id="monthlyViewBtn" style="background-color: rgb(163, 117, 206);">Mensual</button>
+        <button id="dailyViewBtn" style="background-color: rgb(163, 117, 206);">Diario</button>
+    </div>
+
+
+    <div id="calendarContainer">
+        <div id="calendarAnnual" class="calendarView"></div>
+        <div id="calendarMonthly" class="calendarView">
+            <div id="monthNavigation">
+                <button id="prevMonthBtn">Anterior</button>
+                <span id="currentMonthLabel"></span>
+                <button id="nextMonthBtn">Siguiente</button>
+            </div>
+
+            <div id="dias"> 
+                <p><em><strong>Domingo</strong></em></p>
+                <p><em><strong>Lunes</strong></em></p>
+                <p><em><strong>Martes</strong></em></p>
+                <p><em><strong>Miercoles</strong></em></p>
+                <p><em><strong>Jueves</strong></em></p>
+                <p><em><strong>Viernes</strong></em></p>
+                <p><em><strong>Sábado</strong></em></p>
+                </div>
+
+            <div id="calendarDays" class="calendarDays"></div>
+        </div>
+        <div id="calendarDaily" class="calendarView"></div>
+    </div>
+
+    <div id="eventForm">
+        <h3 id="formTitle">Nuevo Evento</h3>
+        <form id="addEventForm">
+            <label for="eventTime">Hora:</label>
+            <input type="time" id="eventTime" required>
+            <label for="eventDescription">Descripción:</label>
+            <input type="text" id="eventDescription" required>
+            <label for="eventParticipants">Participantes:</label>
+            <input type="text" id="eventParticipants" required>
+            <button type="submit">Guardar Evento</button>
+            <button type="button" id="deleteEvent">Eliminar Evento</button>
+        </form>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

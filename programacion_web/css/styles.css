@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#calendarControls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#dias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#calendarControls button {
+    margin: 5px;
+}
+
+#calendarContainer {
+    max-width: 800px;
+    margin: auto;
+}
+
+.calendarView {
+    display: none;
+}
+
+#calendarAnnual {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+#calendarAnnual div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+#calendarMonthly {
+    text-align: center;
+}
+
+#monthNavigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#calendarDays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+#calendarDays div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+#calendarDaily {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+#calendarDaily .hour {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+}
+
+.event {
+    background-color: #9a7cac;
+    margin-top: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#eventForm {
+    max-width: 400px;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+}
+
+#eventForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+#eventForm label, #eventForm input, #eventForm select, #eventForm button {
+    margin-bottom: 10px;
+}
